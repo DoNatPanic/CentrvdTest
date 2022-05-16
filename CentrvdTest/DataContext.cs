@@ -7,6 +7,8 @@ namespace CentrvdTest
     {
         public DbSet<Department> Departments { get; set; }
         public DbSet<Employee> Employees { get; set; }
+        public DbSet<DepartmentSalarySum> DepartmentSalarySum { get; set; }
+        public DbSet<ChiefSalary> ChiefSalaries { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
